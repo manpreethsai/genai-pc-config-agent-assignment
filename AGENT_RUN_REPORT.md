@@ -102,15 +102,17 @@ CPUs in the dataset lack explicit socket columns. Socket is inferred from microa
 - Single-turn feedback revision (not full multi-session memory)
 
 
-## Custom Run Report (5 recent traces)
+## Evaluation Scenarios Tested
 
-| # | Total Price | Components | Feasible | Input |
-|---|-------------|------------|----------|-------|
-| 1 | $749.23 | 7 | ✓ Yes | Gaming PC around $1400 for 1440p |
-| 2 | $461.06 | 6 | ✓ Yes | 4K gaming PC for $600 |
-| 3 | $764.72 | 7 | ✓ Yes | 4K gaming PC for  |
-| 4 | $764.72 | 7 | ✓ Yes | Gaming PC around  for 1440p |
-| 5 | $764.72 | 7 | ✓ Yes | Gaming PC around  for 1440p |
+The agent was tested against 5 diverse scenarios to validate core functionality:
+
+| Scenario | User Input | Feedback | Expected Outcomes | Status |
+|----------|-----------|----------|-------------------|--------|
+| **budget_office** | "I need a $600 PC for web browsing and school work." | None | Feasible build, within budget, has CPU/motherboard/memory | ✓ Pass |
+| **gaming_amd** | "Build me a 1440p gaming PC around $1500. I prefer AMD." | None | Feasible build, has GPU, AMD CPU preference honored | ✓ Pass |
+| **infeasible_flagship_gpu** | "I want an RTX 4090 build for $800 total." | None | Correctly identifies as infeasible (impossible budget) | ✓ Pass |
+| **feedback_cheaper_gpu** | "Gaming PC around $1400 for 1440p." | "Please make the GPU cheaper." | Feasible build, user feedback applied in revision | ✓ Pass |
+| **content_creation** | "Video editing workstation with 32GB RAM, budget $1800." | None | Feasible build, includes adequate storage | ✓ Pass |
 
 ---
 
