@@ -106,70 +106,70 @@ CPUs in the dataset lack explicit socket columns. Socket is inferred from microa
 
 | # | Total Price | Components | Feasible | Input |
 |---|-------------|------------|----------|-------|
-| 1 | $764.72 | 7 | ✓ Yes | Gaming PC around  for 1440p |
-| 2 | $381.8 | 6 | ✓ Yes | Gaming PC around  for 1440p |
-| 3 | $764.72 | 7 | ✓ Yes | Gaming PC around  for 1440p |
+| 1 | $749.23 | 7 | ✓ Yes | Gaming PC around $1400 for 1440p |
+| 2 | $461.06 | 6 | ✓ Yes | 4K gaming PC for $600 |
+| 3 | $764.72 | 7 | ✓ Yes | 4K gaming PC for  |
 | 4 | $764.72 | 7 | ✓ Yes | Gaming PC around  for 1440p |
-| 5 | $381.8 | 6 | ✓ Yes | I need a  PC for web browsing and school work. |
+| 5 | $764.72 | 7 | ✓ Yes | Gaming PC around  for 1440p |
 
 ---
 
 ## Primary Run Trace
 
-# Agent Trace `d02f5288-2172-46c0-a5bc-c93860c31c10`
+# Agent Trace `28284e52-8c54-4a44-8de1-57e1e65c2abb`
 
-**User input:** Gaming PC around  for 1440p
+**User input:** Gaming PC around $1400 for 1440p
 
 ## Steps
 ### 1. REASON
 Interpreting user goals, budget, preferences, and constraints.
 
 ### 2. PLAN
-Planning component queries for usage=gaming, budget=None.
+Planning component queries for usage=gaming, budget=1400.0.
 
 ### 3. ACT
 Executed tool `query_components`.
 - Tool: `query_components`
-- Input: `{"category": "cpu", "max_price": 350.0, "min_price": 80.0, "socket": null, "form_factor": null, "brand_preference": null, "keyword": null, "limit": 40}`
-- Output: `{"category": "cpu", "count": 40, "total_matches": 328, "results": [{"name": "Intel Core i7-920", "price": 80.0, "socket": null, "form_factor": null, "memory_type": null, "wattage": null, "tdp": "130", "chipset": null, "capacity": null, "modules": null, "length": null}, {"name": "Intel Core i5-661", "price": 80.0, "socket": null, "form_factor": null, "memory_type": null, "wattage": null, "tdp": "87", "chipset": null, "capacity": null, "modules": null, "length": null}, {"name": "AMD FX-4350", "price": 82.96, "socket": null, "form_factor": null, "memory_type": null, "wattage": null, "tdp": "125", "chipset": null, "capacity": null, "modules": null, "length": null}, {"name": "Intel Core i5-4430", "price": 83.0, "socket": "LGA1150", "form_factor": null, "memory_type": null, "wattage": null, "tdp": "84", "chipset": null, "capacity": null, "modules": null, "length": null}, {"name": "AMD A10-6700", "price": 83.22, "socket": null, "form_factor": null, "memory_type": null, "wattage": null, "tdp": "65", "chipset": null, "capacity": null, "modules": null, "length": null}, {"name": "Intel Core i7-950", "price": 84.15, "socket": null, "form_factor": null, "memory_type": null, "wattage": null, "td`
+- Input: `{"category": "cpu", "max_price": 308.0, "min_price": 150.0, "socket": null, "form_factor": null, "brand_preference": null, "keyword": null, "limit": 40}`
+- Output: `{"category": "cpu", "count": 40, "total_matches": 157, "results": [{"name": "Intel Core i7-960", "price": 150.0, "socket": null, "form_factor": null, "memory_type": null, "wattage": null, "tdp": "130", "chipset": null, "capacity": null, "modules": null, "length": null}, {"name": "Intel Core i5-13400F", "price": 151.47, "socket": "LGA1700", "form_factor": null, "memory_type": null, "wattage": null, "tdp": "65", "chipset": null, "capacity": null, "modules": null, "length": null}, {"name": "Intel Core i7-7700K", "price": 151.69, "socket": "LGA1151", "form_factor": null, "memory_type": null, "wattage": null, "tdp": "91", "chipset": null, "capacity": null, "modules": null, "length": null}, {"name": "Intel Core i3-2125", "price": 152.0, "socket": "LGA1155", "form_factor": null, "memory_type": null, "wattage": null, "tdp": "65", "chipset": null, "capacity": null, "modules": null, "length": null}, {"name": "AMD Ryzen 5 8500G", "price": 152.5, "socket": "AM5", "form_factor": null, "memory_type": null, "wattage": null, "tdp": "65", "chipset": null, "capacity": null, "modules": null, "length": null}, {"name": "Intel Pentium G3470", "price": 153.1, "socket": "LGA1150", "form_factor": null, "me`
 
 ### 4. OBSERVE
 Processed tool output and updated build draft.
 - Tool: `query_components`
-- Output: `{"category": "cpu", "count": 40, "total_matches": 328, "results": [{"name": "Intel Core i7-920", "price": 80.0, "socket": null, "form_factor": null, "memory_type": null, "wattage": null, "tdp": "130", "chipset": null, "capacity": null, "modules": null, "length": null}, {"name": "Intel Core i5-661", "price": 80.0, "socket": null, "form_factor": null, "memory_type": null, "wattage": null, "tdp": "87", "chipset": null, "capacity": null, "modules": null, "length": null}, {"name": "AMD FX-4350", "price": 82.96, "socket": null, "form_factor": null, "memory_type": null, "wattage": null, "tdp": "125", "chipset": null, "capacity": null, "modules": null, "length": null}, {"name": "Intel Core i5-4430", "price": 83.0, "socket": "LGA1150", "form_factor": null, "memory_type": null, "wattage": null, "tdp": "84", "chipset": null, "capacity": null, "modules": null, "length": null}, {"name": "AMD A10-6700", "price": 83.22, "socket": null, "form_factor": null, "memory_type": null, "wattage": null, "tdp": "65", "chipset": null, "capacity": null, "modules": null, "length": null}, {"name": "Intel Core i7-950", "price": 84.15, "socket": null, "form_factor": null, "memory_type": null, "wattage": null, "td`
+- Output: `{"category": "cpu", "count": 40, "total_matches": 157, "results": [{"name": "Intel Core i7-960", "price": 150.0, "socket": null, "form_factor": null, "memory_type": null, "wattage": null, "tdp": "130", "chipset": null, "capacity": null, "modules": null, "length": null}, {"name": "Intel Core i5-13400F", "price": 151.47, "socket": "LGA1700", "form_factor": null, "memory_type": null, "wattage": null, "tdp": "65", "chipset": null, "capacity": null, "modules": null, "length": null}, {"name": "Intel Core i7-7700K", "price": 151.69, "socket": "LGA1151", "form_factor": null, "memory_type": null, "wattage": null, "tdp": "91", "chipset": null, "capacity": null, "modules": null, "length": null}, {"name": "Intel Core i3-2125", "price": 152.0, "socket": "LGA1155", "form_factor": null, "memory_type": null, "wattage": null, "tdp": "65", "chipset": null, "capacity": null, "modules": null, "length": null}, {"name": "AMD Ryzen 5 8500G", "price": 152.5, "socket": "AM5", "form_factor": null, "memory_type": null, "wattage": null, "tdp": "65", "chipset": null, "capacity": null, "modules": null, "length": null}, {"name": "Intel Pentium G3470", "price": 153.1, "socket": "LGA1150", "form_factor": null, "me`
 
 ### 5. ACT
 Executed tool `query_components`.
 - Tool: `query_components`
-- Input: `{"category": "motherboard", "max_price": 220.0, "min_price": null, "socket": "LGA1150", "form_factor": null, "brand_preference": null, "keyword": null, "limit": 10}`
-- Output: `{"category": "motherboard", "count": 3, "total_matches": 3, "results": [{"name": "ASRock H81 Pro BTC", "price": 44.98, "socket": "LGA1150", "form_factor": "ATX", "memory_type": null, "wattage": null, "tdp": null, "chipset": null, "capacity": null, "modules": null, "length": null}, {"name": "ASRock H81M-HDS R2.0", "price": 151.16, "socket": "LGA1150", "form_factor": "Micro ATX", "memory_type": null, "wattage": null, "tdp": null, "chipset": null, "capacity": null, "modules": null, "length": null}, {"name": "ASRock Z87 OC Formula/ac", "price": 203.65, "socket": "LGA1150", "form_factor": "EATX", "memory_type": null, "wattage": null, "tdp": null, "chipset": null, "capacity": null, "modules": null, "length": null}]}`
+- Input: `{"category": "motherboard", "max_price": 220.0, "min_price": null, "socket": "LGA1700", "form_factor": null, "brand_preference": null, "keyword": null, "limit": 10}`
+- Output: `{"category": "motherboard", "count": 10, "total_matches": 109, "results": [{"name": "ASRock H610M-HDV/M.2+ D5", "price": 89.57, "socket": "LGA1700", "form_factor": "Micro ATX", "memory_type": null, "wattage": null, "tdp": null, "chipset": null, "capacity": null, "modules": null, "length": null}, {"name": "ASRock H610M/ac", "price": 89.99, "socket": "LGA1700", "form_factor": "Micro ATX", "memory_type": null, "wattage": null, "tdp": null, "chipset": null, "capacity": null, "modules": null, "length": null}, {"name": "Asus PRO H610M-CT D4-CSM", "price": 89.99, "socket": "LGA1700", "form_factor": "Micro ATX", "memory_type": null, "wattage": null, "tdp": null, "chipset": null, "capacity": null, "modules": null, "length": null}, {"name": "MSI PRO H610M-G DDR4", "price": 93.99, "socket": "LGA1700", "form_factor": "Micro ATX", "memory_type": null, "wattage": null, "tdp": null, "chipset": null, "capacity": null, "modules": null, "length": null}, {"name": "MSI PRO B760M-P DDR4", "price": 99.99, "socket": "LGA1700", "form_factor": "Micro ATX", "memory_type": null, "wattage": null, "tdp": null, "chipset": null, "capacity": null, "modules": null, "length": null}, {"name": "Asus B760M-AYW WIFI D4`
 
 ### 6. OBSERVE
 Processed tool output and updated build draft.
 - Tool: `query_components`
-- Output: `{"category": "motherboard", "count": 3, "total_matches": 3, "results": [{"name": "ASRock H81 Pro BTC", "price": 44.98, "socket": "LGA1150", "form_factor": "ATX", "memory_type": null, "wattage": null, "tdp": null, "chipset": null, "capacity": null, "modules": null, "length": null}, {"name": "ASRock H81M-HDS R2.0", "price": 151.16, "socket": "LGA1150", "form_factor": "Micro ATX", "memory_type": null, "wattage": null, "tdp": null, "chipset": null, "capacity": null, "modules": null, "length": null}, {"name": "ASRock Z87 OC Formula/ac", "price": 203.65, "socket": "LGA1150", "form_factor": "EATX", "memory_type": null, "wattage": null, "tdp": null, "chipset": null, "capacity": null, "modules": null, "length": null}]}`
+- Output: `{"category": "motherboard", "count": 10, "total_matches": 109, "results": [{"name": "ASRock H610M-HDV/M.2+ D5", "price": 89.57, "socket": "LGA1700", "form_factor": "Micro ATX", "memory_type": null, "wattage": null, "tdp": null, "chipset": null, "capacity": null, "modules": null, "length": null}, {"name": "ASRock H610M/ac", "price": 89.99, "socket": "LGA1700", "form_factor": "Micro ATX", "memory_type": null, "wattage": null, "tdp": null, "chipset": null, "capacity": null, "modules": null, "length": null}, {"name": "Asus PRO H610M-CT D4-CSM", "price": 89.99, "socket": "LGA1700", "form_factor": "Micro ATX", "memory_type": null, "wattage": null, "tdp": null, "chipset": null, "capacity": null, "modules": null, "length": null}, {"name": "MSI PRO H610M-G DDR4", "price": 93.99, "socket": "LGA1700", "form_factor": "Micro ATX", "memory_type": null, "wattage": null, "tdp": null, "chipset": null, "capacity": null, "modules": null, "length": null}, {"name": "MSI PRO B760M-P DDR4", "price": 99.99, "socket": "LGA1700", "form_factor": "Micro ATX", "memory_type": null, "wattage": null, "tdp": null, "chipset": null, "capacity": null, "modules": null, "length": null}, {"name": "Asus B760M-AYW WIFI D4`
 
 ### 7. ACT
 Executed tool `query_components`.
 - Tool: `query_components`
-- Input: `{"category": "memory", "max_price": 120.0, "min_price": 30.0, "socket": null, "form_factor": null, "brand_preference": null, "keyword": "DDR4", "limit": 20}`
-- Output: `{"category": "memory", "count": 20, "total_matches": 658, "results": [{"name": "G.Skill NT 4 GB", "price": 30.03, "socket": null, "form_factor": null, "memory_type": "DDR4", "wattage": null, "tdp": null, "chipset": null, "capacity": null, "modules": "1,4", "length": null}, {"name": "Mushkin Proline 8 GB", "price": 30.05, "socket": null, "form_factor": null, "memory_type": "DDR4", "wattage": null, "tdp": null, "chipset": null, "capacity": null, "modules": "1,8", "length": null}, {"name": "Kingston ValueRAM 1 GB", "price": 30.36, "socket": null, "form_factor": null, "memory_type": "DDR4", "wattage": null, "tdp": null, "chipset": null, "capacity": null, "modules": "1,1", "length": null}, {"name": "Mushkin Essentials 4 GB", "price": 30.59, "socket": null, "form_factor": null, "memory_type": "DDR4", "wattage": null, "tdp": null, "chipset": null, "capacity": null, "modules": "2,2", "length": null}, {"name": "G.Skill Ripjaws 8 GB", "price": 30.6, "socket": null, "form_factor": null, "memory_type": "DDR4", "wattage": null, "tdp": null, "chipset": null, "capacity": null, "modules": "2,4", "length": null}, {"name": "Patriot Viper Steel 8 GB", "price": 30.98, "socket": null, "form_factor": nu`
+- Input: `{"category": "memory", "max_price": 120.0, "min_price": 30.0, "socket": null, "form_factor": null, "brand_preference": null, "keyword": "DDR5", "limit": 20}`
+- Output: `{"category": "memory", "count": 20, "total_matches": 679, "results": [{"name": "Kingston KTL-TP3CL/4G 4 GB", "price": 30.0, "socket": null, "form_factor": null, "memory_type": "DDR5", "wattage": null, "tdp": null, "chipset": null, "capacity": null, "modules": "1,4", "length": null}, {"name": "Crucial CT2K4G3S160BM 8 GB", "price": 30.95, "socket": null, "form_factor": null, "memory_type": "DDR5", "wattage": null, "tdp": null, "chipset": null, "capacity": null, "modules": "2,4", "length": null}, {"name": "Kingston ValueRAM 4 GB", "price": 30.99, "socket": null, "form_factor": null, "memory_type": "DDR5", "wattage": null, "tdp": null, "chipset": null, "capacity": null, "modules": "2,2", "length": null}, {"name": "Crucial CT2KIT51264BA160B 8 GB", "price": 31.2, "socket": null, "form_factor": null, "memory_type": "DDR5", "wattage": null, "tdp": null, "chipset": null, "capacity": null, "modules": "2,4", "length": null}, {"name": "Kingston KVR16E11/8 8 GB", "price": 31.34, "socket": null, "form_factor": null, "memory_type": "DDR5", "wattage": null, "tdp": null, "chipset": null, "capacity": null, "modules": "1,8", "length": null}, {"name": "Crucial CT8G3S1339M 8 GB", "price": 31.38, "socke`
 
 ### 8. OBSERVE
 Processed tool output and updated build draft.
 - Tool: `query_components`
-- Output: `{"category": "memory", "count": 20, "total_matches": 658, "results": [{"name": "G.Skill NT 4 GB", "price": 30.03, "socket": null, "form_factor": null, "memory_type": "DDR4", "wattage": null, "tdp": null, "chipset": null, "capacity": null, "modules": "1,4", "length": null}, {"name": "Mushkin Proline 8 GB", "price": 30.05, "socket": null, "form_factor": null, "memory_type": "DDR4", "wattage": null, "tdp": null, "chipset": null, "capacity": null, "modules": "1,8", "length": null}, {"name": "Kingston ValueRAM 1 GB", "price": 30.36, "socket": null, "form_factor": null, "memory_type": "DDR4", "wattage": null, "tdp": null, "chipset": null, "capacity": null, "modules": "1,1", "length": null}, {"name": "Mushkin Essentials 4 GB", "price": 30.59, "socket": null, "form_factor": null, "memory_type": "DDR4", "wattage": null, "tdp": null, "chipset": null, "capacity": null, "modules": "2,2", "length": null}, {"name": "G.Skill Ripjaws 8 GB", "price": 30.6, "socket": null, "form_factor": null, "memory_type": "DDR4", "wattage": null, "tdp": null, "chipset": null, "capacity": null, "modules": "2,4", "length": null}, {"name": "Patriot Viper Steel 8 GB", "price": 30.98, "socket": null, "form_factor": nu`
+- Output: `{"category": "memory", "count": 20, "total_matches": 679, "results": [{"name": "Kingston KTL-TP3CL/4G 4 GB", "price": 30.0, "socket": null, "form_factor": null, "memory_type": "DDR5", "wattage": null, "tdp": null, "chipset": null, "capacity": null, "modules": "1,4", "length": null}, {"name": "Crucial CT2K4G3S160BM 8 GB", "price": 30.95, "socket": null, "form_factor": null, "memory_type": "DDR5", "wattage": null, "tdp": null, "chipset": null, "capacity": null, "modules": "2,4", "length": null}, {"name": "Kingston ValueRAM 4 GB", "price": 30.99, "socket": null, "form_factor": null, "memory_type": "DDR5", "wattage": null, "tdp": null, "chipset": null, "capacity": null, "modules": "2,2", "length": null}, {"name": "Crucial CT2KIT51264BA160B 8 GB", "price": 31.2, "socket": null, "form_factor": null, "memory_type": "DDR5", "wattage": null, "tdp": null, "chipset": null, "capacity": null, "modules": "2,4", "length": null}, {"name": "Kingston KVR16E11/8 8 GB", "price": 31.34, "socket": null, "form_factor": null, "memory_type": "DDR5", "wattage": null, "tdp": null, "chipset": null, "capacity": null, "modules": "1,8", "length": null}, {"name": "Crucial CT8G3S1339M 8 GB", "price": 31.38, "socke`
 
 ### 9. ACT
 Executed tool `query_components`.
 - Tool: `query_components`
-- Input: `{"category": "video_card", "max_price": 900.0, "min_price": 180.0, "socket": null, "form_factor": null, "brand_preference": null, "keyword": "RTX", "limit": 30}`
-- Output: `{"category": "video_card", "count": 30, "total_matches": 353, "results": [{"name": "MSI GAMING X", "price": 194.99, "socket": null, "form_factor": null, "memory_type": null, "wattage": null, "tdp": null, "chipset": "GeForce RTX 3050 6GB", "capacity": null, "modules": null, "length": "205"}, {"name": "Asus DUAL OC", "price": 199.97, "socket": null, "form_factor": null, "memory_type": null, "wattage": null, "tdp": null, "chipset": "GeForce RTX 3050 6GB", "capacity": null, "modules": null, "length": "201"}, {"name": "Yeston LP", "price": 205.0, "socket": null, "form_factor": null, "memory_type": null, "wattage": null, "tdp": null, "chipset": "GeForce RTX 3050 6GB", "capacity": null, "modules": null, "length": "160"}, {"name": "MSI LP OC", "price": 219.98, "socket": null, "form_factor": null, "memory_type": null, "wattage": null, "tdp": null, "chipset": "GeForce RTX 3050 6GB", "capacity": null, "modules": null, "length": "174"}, {"name": "MSI VENTUS 2X XS OC", "price": 219.99, "socket": null, "form_factor": null, "memory_type": null, "wattage": null, "tdp": null, "chipset": "GeForce RTX 3050 8GB", "capacity": null, "modules": null, "length": "205"}, {"name": "Gigabyte WINDFORCE OC", "p`
+- Input: `{"category": "video_card", "max_price": 594.9515, "min_price": 180.0, "socket": null, "form_factor": null, "brand_preference": null, "keyword": "RTX", "limit": 30}`
+- Output: `{"category": "video_card", "count": 30, "total_matches": 184, "results": [{"name": "MSI GAMING X", "price": 194.99, "socket": null, "form_factor": null, "memory_type": null, "wattage": null, "tdp": null, "chipset": "GeForce RTX 3050 6GB", "capacity": null, "modules": null, "length": "205"}, {"name": "Asus DUAL OC", "price": 199.97, "socket": null, "form_factor": null, "memory_type": null, "wattage": null, "tdp": null, "chipset": "GeForce RTX 3050 6GB", "capacity": null, "modules": null, "length": "201"}, {"name": "Yeston LP", "price": 205.0, "socket": null, "form_factor": null, "memory_type": null, "wattage": null, "tdp": null, "chipset": "GeForce RTX 3050 6GB", "capacity": null, "modules": null, "length": "160"}, {"name": "MSI LP OC", "price": 219.98, "socket": null, "form_factor": null, "memory_type": null, "wattage": null, "tdp": null, "chipset": "GeForce RTX 3050 6GB", "capacity": null, "modules": null, "length": "174"}, {"name": "MSI VENTUS 2X XS OC", "price": 219.99, "socket": null, "form_factor": null, "memory_type": null, "wattage": null, "tdp": null, "chipset": "GeForce RTX 3050 8GB", "capacity": null, "modules": null, "length": "205"}, {"name": "Gigabyte WINDFORCE OC", "p`
 
 ### 10. OBSERVE
 Processed tool output and updated build draft.
 - Tool: `query_components`
-- Output: `{"category": "video_card", "count": 30, "total_matches": 353, "results": [{"name": "MSI GAMING X", "price": 194.99, "socket": null, "form_factor": null, "memory_type": null, "wattage": null, "tdp": null, "chipset": "GeForce RTX 3050 6GB", "capacity": null, "modules": null, "length": "205"}, {"name": "Asus DUAL OC", "price": 199.97, "socket": null, "form_factor": null, "memory_type": null, "wattage": null, "tdp": null, "chipset": "GeForce RTX 3050 6GB", "capacity": null, "modules": null, "length": "201"}, {"name": "Yeston LP", "price": 205.0, "socket": null, "form_factor": null, "memory_type": null, "wattage": null, "tdp": null, "chipset": "GeForce RTX 3050 6GB", "capacity": null, "modules": null, "length": "160"}, {"name": "MSI LP OC", "price": 219.98, "socket": null, "form_factor": null, "memory_type": null, "wattage": null, "tdp": null, "chipset": "GeForce RTX 3050 6GB", "capacity": null, "modules": null, "length": "174"}, {"name": "MSI VENTUS 2X XS OC", "price": 219.99, "socket": null, "form_factor": null, "memory_type": null, "wattage": null, "tdp": null, "chipset": "GeForce RTX 3050 8GB", "capacity": null, "modules": null, "length": "205"}, {"name": "Gigabyte WINDFORCE OC", "p`
+- Output: `{"category": "video_card", "count": 30, "total_matches": 184, "results": [{"name": "MSI GAMING X", "price": 194.99, "socket": null, "form_factor": null, "memory_type": null, "wattage": null, "tdp": null, "chipset": "GeForce RTX 3050 6GB", "capacity": null, "modules": null, "length": "205"}, {"name": "Asus DUAL OC", "price": 199.97, "socket": null, "form_factor": null, "memory_type": null, "wattage": null, "tdp": null, "chipset": "GeForce RTX 3050 6GB", "capacity": null, "modules": null, "length": "201"}, {"name": "Yeston LP", "price": 205.0, "socket": null, "form_factor": null, "memory_type": null, "wattage": null, "tdp": null, "chipset": "GeForce RTX 3050 6GB", "capacity": null, "modules": null, "length": "160"}, {"name": "MSI LP OC", "price": 219.98, "socket": null, "form_factor": null, "memory_type": null, "wattage": null, "tdp": null, "chipset": "GeForce RTX 3050 6GB", "capacity": null, "modules": null, "length": "174"}, {"name": "MSI VENTUS 2X XS OC", "price": 219.99, "socket": null, "form_factor": null, "memory_type": null, "wattage": null, "tdp": null, "chipset": "GeForce RTX 3050 8GB", "capacity": null, "modules": null, "length": "205"}, {"name": "Gigabyte WINDFORCE OC", "p`
 
 ### 11. ACT
 Executed tool `query_components`.
@@ -207,19 +207,19 @@ Processed tool output and updated build draft.
 ### 17. ACT
 Executed tool `validate_compatibility`.
 - Tool: `validate_compatibility`
-- Input: `{"components": [{"category": "cpu", "name": "Intel Core i5-4570", "price": 98.0, "rationale": "CPU matched to workload and budget"}, {"category": "motherboard", "name": "ASRock Z87 OC Formula/ac", "price": 203.65, "rationale": "Motherboard with socket LGA1150"}, {"category": "memory", "name": "Silicon Power SP008GBLFU213B02 8 GB", "price": 32.11, "rationale": "Memory sized for target workload"}, {"category": "video_card", "name": "MSI SHADOW 2X OC", "price": 299.99, "rationale": "Discrete GPU for gaming/content workloads"}, {"category": "internal_hard_drive", "name": "FanXiang S101", "price": 15.99, "rationale": "Primary SSD storage"}, {"category": "power_supply", "name": "SAMA GT", "price": 64.99, "rationale": "PSU with adequate wattage"}, {"category": "case", "name": "Cooler Master Elite 301", "price": 49.99, "rationale": "ATX case compatible with standard builds"}]}`
-- Output: `{"compatible": true, "issues": [], "warnings": [], "estimated_psu_watts": 384}`
+- Input: `{"components": [{"category": "cpu", "name": "Intel Core i5-12500", "price": 179.92, "rationale": "CPU matched to workload and budget"}, {"category": "motherboard", "name": "Biostar H610MT-E", "price": 105.36, "rationale": "Motherboard with socket LGA1700"}, {"category": "memory", "name": "G.Skill Ripjaws 16 GB", "price": 32.99, "rationale": "Memory sized for target workload"}, {"category": "video_card", "name": "MSI SHADOW 2X OC", "price": 299.99, "rationale": "Discrete GPU for gaming/content workloads"}, {"category": "internal_hard_drive", "name": "FanXiang S101", "price": 15.99, "rationale": "Primary SSD storage"}, {"category": "power_supply", "name": "SAMA GT", "price": 64.99, "rationale": "PSU with adequate wattage"}, {"category": "case", "name": "Cooler Master Elite 301", "price": 49.99, "rationale": "ATX case compatible with standard builds"}]}`
+- Output: `{"compatible": true, "issues": [], "warnings": [], "estimated_psu_watts": 365}`
 
 ### 18. OBSERVE
 Processed tool output and updated build draft.
 - Tool: `validate_compatibility`
-- Output: `{"compatible": true, "issues": [], "warnings": [], "estimated_psu_watts": 384}`
+- Output: `{"compatible": true, "issues": [], "warnings": [], "estimated_psu_watts": 365}`
 
 ### 19. CRITIQUE
 {}
 
 ### 20. RESPOND
-Configured a gaming PC with 7 core components totaling $764.72.
+Configured a gaming PC with 7 core components totaling $749.23.
 
 ## Final Build
 ```json
@@ -227,20 +227,20 @@ Configured a gaming PC with 7 core components totaling $764.72.
   "components": [
     {
       "category": "cpu",
-      "name": "Intel Core i5-4570",
-      "price": 98.0,
+      "name": "Intel Core i5-12500",
+      "price": 179.92,
       "rationale": "CPU matched to workload and budget"
     },
     {
       "category": "motherboard",
-      "name": "ASRock Z87 OC Formula/ac",
-      "price": 203.65,
-      "rationale": "Motherboard with socket LGA1150"
+      "name": "Biostar H610MT-E",
+      "price": 105.36,
+      "rationale": "Motherboard with socket LGA1700"
     },
     {
       "category": "memory",
-      "name": "Silicon Power SP008GBLFU213B02 8 GB",
-      "price": 32.11,
+      "name": "G.Skill Ripjaws 16 GB",
+      "price": 32.99,
       "rationale": "Memory sized for target workload"
     },
     {
@@ -268,8 +268,8 @@ Configured a gaming PC with 7 core components totaling $764.72.
       "rationale": "ATX case compatible with standard builds"
     }
   ],
-  "total_price": 764.72,
-  "summary": "Configured a gaming PC with 7 core components totaling $764.72.",
+  "total_price": 749.23,
+  "summary": "Configured a gaming PC with 7 core components totaling $749.23.",
   "compatibility_notes": [],
   "tradeoffs": [],
   "feasible": true,
