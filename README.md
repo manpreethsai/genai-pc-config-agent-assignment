@@ -53,7 +53,7 @@ REASON → PLAN → ACT → OBSERVE → CRITIQUE → RESPOND
 Expected layout:
 
 ```
-Cursor Projects/
+Repository/
 ├── Computer_Components_Dataset-main/
 │   └── data/csv/
 └── genai-pc-config-agent/
