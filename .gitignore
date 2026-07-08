@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.py[cod]
+.env
+.DS_Store
+*.egg-info/
+dist/
+build/
+PLANNER_ANALYSIS.md
+test_api_key.ipynb
+test_api_key.py
+Agentic AI Assignment - IA - Custom Agent (Gen AI).docx
