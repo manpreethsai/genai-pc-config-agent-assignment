@@ -365,3 +365,6 @@ def plan_with_llm(self, requirements):
 **Improved State:** 🔸 Intelligent, adaptive, explainable
 
 Focus on **PLAN and OBSERVE phases** for highest impact. These are where LLM's reasoning power can most improve decision quality and user experience.
+
+MULTI-AGENT PROTOTYPE
+https://github.com/manpreethsai/genai-pc-config-multi-agent/tree/main
